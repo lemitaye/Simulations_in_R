@@ -16,7 +16,6 @@ for (i in 1:r) {
 
 # Some summary and an interactive plot
 summary(prob)
-
 ggplot() +
         geom_line(aes(seq_along(prob), prob)) +
         geom_hline(aes(yintercept = 0.5), color = "red", size = 1) +
